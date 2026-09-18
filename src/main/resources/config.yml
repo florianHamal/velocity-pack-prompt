@@ -1,0 +1,15 @@
+# Velocity Pack Prompt configuration
+pack:
+  # Direct download URL of the resource pack (must be http(s), reachable by the client)
+  url: "https://example.com/pack.zip"
+  # Prompt text shown in the client dialog
+  prompt: "Please accept our resource pack to play!"
+  # If true, the client is forced to use the pack (kicked on decline)
+  force: true
+  # Optional SHA-1 hex hash of the pack file (40 hex chars).
+  # Lets the client verify the download and skip it if already cached.
+  # Empty means no hash is sent.
+  hash: ""
+# Delay after lobby join before sending the pack offer, in seconds.
+# Needed so the backend server doesn't clear the prompt right away.
+delay-seconds: 1
